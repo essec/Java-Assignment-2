@@ -38,9 +38,10 @@ abstract class Pokemon{
 	public void battle(){
 		this.health -= 25;
 		this.mood -= 25;
-		if(this.health <= 0)
+		if(this.health <= 0){
 			this.health = 0;
 			this.mood = 0;
+		}
 		if(this.mood <= 0)
 			this.mood =0;
 	}
